@@ -1,0 +1,24 @@
+<div class="form-row">
+    <div class="form-group col-md-6 ">
+      <label for="food-name">Name</label>
+      <input type="text" [(ngModel)]="newFood.name" class="form-control" placeholder="Type your name...">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="food-calories">Calories</label>
+      <input type="text" [(ngModel)]="newFood.calories" class="form-control" placeholder="Insert amount of calories">
+    </div>
+  </div>
+
+  <div class="form-row form-group col-md-12">
+    <label for="food-quantity">Quantity</label>
+    <input type="text" [(ngModel)]="newFood.quantity" class="form-control" placeholder="i.e 243">
+  </div>
+
+  <div class="form-row form-group col-md-12">
+    <label for="food-image">Image</label>
+    <input type="text" [(ngModel)]="newFood.image" class="form-control" placeholder="insert image url">
+  </div>
+
+  <div class="form-row button-container">
+  <button (click)="addFood()" class="btn btn-primary btn-form">Submit New Food</button>
+  </div>
